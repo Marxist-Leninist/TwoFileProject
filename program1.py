@@ -12,10 +12,10 @@ def add():
 
 def subtract():
     try:
-    if is_float(entry1.get()) and is_float(entry2.get()):
-        num1 = float(entry1.get())
-        num2 = float(entry2.get())ult.set(num1 - num2)
-    except ValueError:
+        if is_float(entry1.get()) and is_float(entry2.get()):
+        num1     = float(entry1.get())
+        num2 =     float(entry2.get())ult.set(num1 - num2)
+    except Va    lueError:
         messagebox.showerror("Invalid Input", "Please enter valid numbers")
 
 def multiply():
@@ -36,7 +36,7 @@ def divide():
         else:
             messagebox.showerror("Error", "Cannot divide by zero")
     except ValueError:
-        messagebox.showerror("Invalid Input", "Please enter valid numbers")
+            messagebox.showerror("Invalid Input", "Please enter valid numbers")
 
 # Create the main window
 root = tk.Tk()
