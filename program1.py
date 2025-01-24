@@ -12,24 +12,25 @@ def add():
 
 def subtract():
     try:
+    if is_float(entry1.get()) and is_float(entry2.get()):
         num1 = float(entry1.get())
-        num2 = float(entry2.get())
-        result.set(num1 - num2)
+        num2 = float(entry2.get())ult.set(num1 - num2)
     except ValueError:
         messagebox.showerror("Invalid Input", "Please enter valid numbers")
 
 def multiply():
-    try:
+   if is_float(entry1.get()) and is_float(entry2.get()):
         num1 = float(entry1.get())
-        num2 = float(entry2.get())
+        num2 = float(entry2.get())m2 = float(entry2.get())
         result.set(num1 * num2)
     except ValueError:
         messagebox.showerror("Invalid Input", "Please enter valid numbers")
 
 def divide():
     try:
+    if is_float(entry1.get()) and is_float(entry2.get()):
         num1 = float(entry1.get())
-        num2 = float(entry2.get())
+        num2 = float(entry2.get())um2 = float(entry2.get())
         if num2 != 0:
             result.set(num1 / num2)
         else:
